@@ -36,3 +36,17 @@ git clone https://gitlab.ie.u-ryukyu.ac.jp/e215742/datasets.git
 ```bash
 python3 fine_chuning_vgg16.py  --train-directory-path /path/to/train_dir --test-directory-path /path/to/test_dir
 ```
+
+## 実行において生成されるファイル
+```bash
+# モデルの学習において生成される
+./train_accracy.png # 学習に対しての正解率
+./train_loss.png # 学習に対しての損失
+./train_test_result.txt # 学習に用いたデータセットに対しての耐性を保存している
+
+# 別で読み込んだデータセットを用いたモデルの評価において生成される
+./test_result.txt
+
+# モデルの保存で生成される
+./models/imageclassifier_VGG16.h5 # h5形式で保存される
+```
