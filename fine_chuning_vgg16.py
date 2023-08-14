@@ -198,7 +198,7 @@ def evaluate_by_dataset(model, test, test_data):
 def model_save(model):
     # Save the model
 
-    model.save(os.path.join('models','imageclassifier_VGG16.keras'))
+    model.save(os.path.join('models','imageclassifier_VGG16.h5'))
     
     
 def main(args):
